@@ -15,7 +15,7 @@ function res = tennisball_flows(~, Q)
     deriv_x = vx;
     deriv_y = vy;
     deriv_vx = (-0.5 * density_air * drag_coef * area)/ (mass_ball) * (vx^2 + vy^2) * vx / (sqrt(vx^2 + vy^2));
-    deriv_vy = -gravity + ((0.5 * density_air * drag_coef * area * (vx^2 + vy^2) * vy / (sqrt(vx^2 + vy^2)))) / mass_ball;
+    deriv_vy = -gravity - ((    0.5 * density_air * drag_coef * area * (vx^2 + vy^2) * vy / (sqrt(vx^2 + vy^2)))) / mass_ball;
 
     res = [deriv_x ; deriv_y ; deriv_vx ; deriv_vy];
 end
