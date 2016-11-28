@@ -21,6 +21,6 @@ function res = tennisball_ode45(v,theta)
     %hline (0.914,'g'); %net y
     %vline (18.29,'r'); %fault
     %title('Tennis Ball Position over 10 seconds');
-    %xlabel('X Position')
-    %ylabel('Y Position')
+    x%label('X Position')
+    y%label('Y Position')
 end
