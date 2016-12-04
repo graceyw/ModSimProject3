@@ -17,6 +17,8 @@ function res = tennisball_ode45(velocity,theta,rpm)
     X = S(:,1);
     Y = S(:,2);
     res = Y(end);
+    hold on;
+    axis ([0 23.77 0 y+0.5]);
     comet(X,Y)
     vline (11.89,'g'); %net x
     hline (0.914,'g'); %net y

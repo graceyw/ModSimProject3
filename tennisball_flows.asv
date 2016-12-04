@@ -2,7 +2,7 @@ function res = tennisball_flows(~, Q)
     %CONSTANTS
     density_air = 1.225; %kg/m^3
     
-    area = 0.00335; %m^2 (cross-sectional area of ball; ...
+    area = 0.0335; %m^2 (cross-sectional area of ball; ...
     %"how much air do I have to push out of the way?")
     
     mass_ball = 0.0585; %kg
